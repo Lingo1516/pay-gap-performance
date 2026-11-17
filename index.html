@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>非主管員工薪資平均數—中位數差距與企業績效｜研究介紹</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;background:#F4F6F8;color:#222;line-height:1.75;font-size:18px}
+  header{background:#1F3864;color:#fff;padding:44px 20px 38px;text-align:center}
+  .badge{display:inline-block;background:#C00000;color:#fff;font-weight:700;border-radius:999px;padding:3px 16px;font-size:15px;margin-bottom:14px}
+  header h1{font-size:30px;line-height:1.45;max-width:900px;margin:0 auto}
+  header .en{margin-top:12px;font-size:16.5px;opacity:.85;line-height:1.5}
+  header .meta{margin-top:14px;font-size:16px;opacity:.92}
+  .wrap{max-width:980px;margin:0 auto;padding:26px 16px 50px}
+  section{background:#fff;border-radius:16px;box-shadow:0 4px 14px rgba(0,0,0,.06);padding:24px 26px;margin-bottom:20px}
+  h2{color:#1F3864;font-size:23px;margin-bottom:12px;border-left:6px solid #C00000;padding-left:10px}
+  h3{color:#1F3864;font-size:19.5px;margin:14px 0 6px}
+  img.chart{width:100%;height:auto;border:1px solid #E0E6EC;border-radius:10px;margin:10px 0 4px}
+  .figcap{font-size:14.5px;color:#607D8B;text-align:center;margin-bottom:6px}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:8px}
+  @media(max-width:760px){.cards{grid-template-columns:1fr}}
+  .card{background:#EEF3F9;border-radius:12px;padding:16px}
+  .card b{color:#1F3864}
+  .formula{background:#FFF8E1;border:1.5px dashed #C9A227;border-radius:12px;padding:16px 18px;text-align:center;font-size:20px;font-weight:700;color:#5D4037;margin:10px 0}
+  .takeaway{background:#FDECEA;border-left:5px solid #C00000;border-radius:10px;padding:12px 18px;margin:10px 0}
+  ul{margin:6px 0 6px 22px}
+  li{margin-bottom:5px}
+  .abs{font-size:16.5px;text-align:justify}
+  footer{text-align:center;color:#90A4AE;font-size:14px;padding:20px}
+</style>
+</head>
+<body>
+<header>
+  <div class="badge">研究論文介紹</div>
+  <h1>非主管員工薪資平均數—中位數差距<br>與企業績效</h1>
+  <div class="en">Mean-to-Median Nonmanagerial Pay Gaps and Firm Performance:<br>Panel Evidence from Taiwan's Listed Firms</div>
+  <div class="meta">台灣上市櫃公司薪資揭露資料｜2019–2024 年｜9,250 筆公司—年度觀測值、1,688 家公司</div>
+</header>
+<div class="wrap">
+
+<section>
+  <h2>這篇研究在問什麼</h2>
+  <p>企業是否該刻意拉大內部薪資差距來激勵員工？競賽理論認為差距能形成晉升誘因，公平理論則警告差距可能傷害合作。本研究不用問卷、不用個體薪資，而是用台灣自 2019 年起強制揭露的「非主管全時員工薪資平均數與中位數」，建構公司層級的分配差距指標，問三個問題：</p>
+  <div class="cards">
+    <div class="card"><b>問題一｜當期關聯</b><br>薪資差距較大的公司，當年度的生產力與績效是否也較高？</div>
+    <div class="card"><b>問題二｜跨期預測</b><br>今年的薪資差距，能不能預測明年的績效？（檢驗「誘因設計」的說法）</div>
+    <div class="card"><b>問題三｜反向關聯</b><br>會不會其實是反過來：公司先賺錢，才透過獎金與員工酬勞把差距拉大？</div>
+  </div>
+</section>
+
+<section>
+  <h2>核心指標：Pay_Inequality</h2>
+  <div class="formula">Pay_Inequality ＝（非主管員工薪資平均數 − 薪資中位數）／薪資中位數</div>
+  <p>平均數高於中位數越多，表示分配越往高薪端偏斜。樣本平均為 0.1518：也就是平均薪資比中位數高約 15%。要注意，這是公司層級的分配摘要，不是個別員工之間的差距，也無法分辨差距來自職級、年資還是獎金。</p>
+  <img class="chart" src="img/dist.png" alt="Pay_Inequality 分配圖">
+  <div class="figcap">圖 1　Pay_Inequality 的分配摘要（論文表 5）</div>
+</section>
+
+<section>
+  <h2>樣本從哪裡來</h2>
+  <img class="chart" src="img/sample.png" alt="樣本篩選流程圖">
+  <div class="figcap">圖 2　樣本篩選流程（論文表 3）</div>
+  <p>資料來源為 TEJ 台灣經濟新報，薪資原始揭露來自公開資訊觀測站。排除金融保險業與非主管員工未達 10 人的公司後，最終樣本為 9,250 筆公司—年度觀測值、1,688 家公司，估計方法為公司與年度雙向固定效果模型。</p>
+</section>
+
+<section>
+  <h2>主要發現：關聯只在「同一年」</h2>
+  <img class="chart" src="img/results.png" alt="主要回歸結果圖">
+  <div class="figcap">圖 3　主要結果（論文表 7、表 8、表 11、表 12）；*** p&lt;0.01，** p&lt;0.05，* p&lt;0.10</div>
+  <div class="takeaway"><b>發現一：</b>當期薪資差距與 ROA（β＝0.0863***）、ROE（β＝0.1623***）顯著正相關，營收型生產力代理指標的關聯較弱（0.2229*）。</div>
+  <div class="takeaway"><b>發現二：</b>把差距落後一期後，三個係數全部轉為不顯著——今年的差距預測不了明年的績效，不支持「事前誘因設計」的因果解讀。</div>
+  <div class="takeaway"><b>發現三：</b>反向檢驗成立：當期 ROA 與薪資差距正相關（0.1247**），而且正向關聯幾乎只出現在獲利組（0.0931***），虧損組不顯著（0.0172）。</div>
+  <h3>穩健性</h3>
+  <ul>
+    <li>加入產業×年度固定效果後，ROE 係數仍顯著（0.1425***），但營收型代理指標轉為不顯著。</li>
+    <li>改用 ln(1＋Pay_Inequality) 替代衡量，ROA 與 ROE 係數仍為正且顯著（0.1004***、0.1897***）。</li>
+    <li>排除 2020–2021 年、排除生技醫療業、改採 5% 縮尾或替代 ROE 分母，結論不變。</li>
+  </ul>
+</section>
+
+<section>
+  <h2>怎麼解讀：先賺錢，才分錢</h2>
+  <p>三個發現合起來指向同一個故事：薪資差距與績效的正相關，集中在「同一個年度」，而且是績效領先、差距隨後。台灣《公司法》第 235 條之 1 要求公司依當年度獲利分派員工酬勞，而揭露薪資採權責發生基礎、包含獎金與員工酬勞——公司當年賺得多，變動給付就把平均數拉高、差距隨之擴大。這是「事後績效連動給付」的同時性關聯，不是「先拉大差距、再換來績效」的證據。</p>
+  <p>本文的貢獻在於把這兩種長得一樣的相關分開，並提醒：用公司層級薪資摘要衡量分配差距有其推論邊界——揭露資料沒有拆分獎金、員工酬勞與固定薪資，機制只能間接推論，不能直接證明。</p>
+</section>
+
+<section>
+  <h2>摘要</h2>
+  <p class="abs">本研究以 2019 至 2024 年台灣上市櫃公司非主管全時員工薪資揭露資料，檢視薪資平均數相對中位數差距與公司績效的條件關聯，並區分當期、跨期及反向估計。於 9,250 筆公司—年度觀測值中，公司與年度固定效果模型顯示，當期薪資差距與 ROA 及 ROE 呈顯著正向關聯，與營收／非主管員工人數之關聯較弱，加入產業×年度固定效果後更不再顯著；落後一期薪資差距無法顯著預測後續績效。反向迴歸顯示當期績效及部分落後績效與薪資差距正向相關；以薪資平均數與中位數對數比值為應變數的檢驗亦顯示其與 ROA 正向相關。惟揭露資料未區分員工酬勞、獎金與固定薪資，無法辨識其因果機制。本文貢獻在於區分事前薪酬誘因與事後績效連動給付所產生的觀察性關聯，並提出以公司層級薪資摘要衡量分配差距的推論邊界。</p>
+  <p style="margin-top:10px"><b>關鍵詞：</b>非主管員工、平均數—中位數薪資差距、競賽理論、績效連動薪酬、公司績效</p>
+</section>
+
+</div>
+<footer>研究成果介紹頁｜數據均取自論文本文表格，係數為固定效果模型估計值</footer>
+</body>
+</html>
